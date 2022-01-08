@@ -111,10 +111,6 @@ a:hover {
  * Footer
  */
 
-.links:hover {
-  opacity: .5;
-}
-
  .icon {
    color: grey;
    padding: 20px;
@@ -122,10 +118,27 @@ a:hover {
    width: 50px;
    text-align: center;
    text-decoration: none;
+   transition: 0.3s;
  }
 
  .icon:hover {
-   color: black;
+   opacity: 1;
+ }
+
+ .icon:not(:hover) {
+   opacity: .5;
+ }
+
+ .fa-github:hover {
+   color: #171515;
+ }
+
+ .fa-linkedin-in:hover {
+   color: #2867B2;
+ }
+
+ .fa-paper-plane:hover {
+   color: blue;
  }
 
 /*
