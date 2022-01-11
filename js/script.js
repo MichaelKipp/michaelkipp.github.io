@@ -1,6 +1,9 @@
-var $grid = $('.grid').isotope({
-  // options
-  itemSelector: '.gallery-item'
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Isotope after all images have loaded
+  $grid = $('.grid').isotope({
+    // options
+    itemSelector: '.gallery-item'
+  });
 });
 
 var $buttonGroup = $('.filters');
